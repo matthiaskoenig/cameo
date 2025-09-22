@@ -30,7 +30,7 @@ from uuid import uuid1
 
 import numpy
 import pandas
-import pkg_resources
+# import pkg_resources
 from cobra.util.context import HistoryManager
 from numpy.random import RandomState
 
@@ -524,9 +524,9 @@ def memoize(function, memo={}):
 
 def get_system_info():
     package_info = list()
-    for dist in pkg_resources.working_set:
-        req = str(dist.as_requirement())
-        package_info.append(req)
+    # for dist in pkg_resources.working_set:
+    #     req = str(dist.as_requirement())
+    #     package_info.append(req)
     return dict(package_info=package_info,
                 platform=platform.platform(),
                 machine=platform.machine(),
