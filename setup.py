@@ -20,7 +20,7 @@ from itertools import chain
 
 from setuptools import setup, find_packages
 
-import versioneer
+# import versioneer
 
 
 requirements = ['numpy>=1.9.1',
@@ -65,8 +65,8 @@ except:
 
 setup(
     name='cameo',
-    version=versioneer.get_version(),
-    cmdclass=versioneer.get_cmdclass(),
+    version='0.13.6',
+    # cmdclass=versioneer.get_cmdclass(),
     packages=find_packages(),
     install_requires=requirements,
     extras_require=extra_requirements,
